@@ -1,0 +1,208 @@
+@font-face {
+  font-family: 'Product';
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Product-Bold';
+  src: url(../assets/fonts/Product-Bold.ttf) format("ttf");
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  font: 20px Product, Arial, Helvetica;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+body *, html * {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body .cta, html .cta {
+  background-color: #008B6F;
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: white !important;
+  font: Product-Bold, Arial, Helvetica;
+}
+
+body .cta:not(.small):hover, html .cta:not(.small):hover {
+  opacity: 0.9;
+}
+
+body .small, html .small {
+  padding: 10px !important;
+}
+
+body .red, html .red {
+  background-color: #E8505B;
+}
+
+body a, html a {
+  color: inherit;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body a.scale:hover, html a.scale:hover {
+  scale: 110%;
+  font-size: 1.04rem;
+  -webkit-box-shadow: 0 0 5px rgba(96, 96, 96, 0.1);
+          box-shadow: 0 0 5px rgba(96, 96, 96, 0.1);
+}
+
+body .nav, html .nav {
+  text-align: center;
+  padding: 20px 50px;
+  width: calc(100% - 100px);
+}
+
+body .nav > *, html .nav > * {
+  display: inline-block;
+  color: #008B6F;
+  vertical-align: middle;
+}
+
+body .nav .logo, html .nav .logo {
+  margin-right: 0;
+  float: left !important;
+  cursor: pointer;
+}
+
+body .nav .nav-list, html .nav .nav-list {
+  text-align: center;
+  margin: 20px 0;
+}
+
+body .nav .right, html .nav .right {
+  margin-top: 10px;
+  float: right;
+  background-color: white;
+  color: #E8505B !important;
+}
+
+body .nav .right::after, html .nav .right::after {
+  z-index: -999;
+  width: 400px;
+  height: 400px;
+  content: '';
+  top: -150px;
+  right: -150px;
+  position: absolute;
+  background: linear-gradient(45deg, #E8505B, rgba(232, 80, 91, 0.5));
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+body .nav .nav-link, html .nav .nav-link {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+body main, html main {
+  color: #606060;
+  display: block;
+  margin: auto auto;
+}
+
+body main section, html main section {
+  margin: 10px auto;
+  display: block;
+  padding: 20px 0 0;
+  position: relative;
+}
+
+body main section::before, html main section::before {
+  position: absolute;
+  content: '';
+  left: -100px;
+  bottom: -150px;
+  background: linear-gradient(45deg, #E8505B, rgba(232, 80, 91, 0.5));
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+body main section:nth-child(2n)::before, html main section:nth-child(2n)::before {
+  background: linear-gradient(45deg, #008B6F, rgba(0, 139, 111, 0.2)) !important;
+  scale: 130%;
+  left: auto;
+  right: -100px;
+}
+
+body main h1, html main h1 {
+  font-size: 3.5rem;
+  line-height: 1;
+  position: relative;
+}
+
+body main .intro, html main .intro {
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+body main .intro *, html main .intro * {
+  margin: 20px 0;
+}
+
+body main .intro .intro-left, html main .intro .intro-left {
+  width: 35%;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+body main .intro .intro-left *, html main .intro .intro-left * {
+  margin: 20px 0;
+}
+
+body main .intro h1, html main .intro h1 {
+  padding-bottom: 0.5em;
+  position: relative;
+}
+
+body main .intro h1::after, html main .intro h1::after {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  content: '';
+  width: 2em;
+  height: 0.9rem;
+  border-radius: 2em;
+  background: #E8505B;
+}
+
+body main .intro .intro-right, html main .intro .intro-right {
+  margin-left: 5%;
+  width: 40%;
+  text-align: end;
+}
+
+body main .intro .intro-right h1::after, html main .intro .intro-right h1::after {
+  right: 0;
+  background-color: #008B6F !important;
+}
+
+body main .intro img, html main .intro img {
+  width: auto;
+  max-width: 500px;
+  display: block;
+}
+/*# sourceMappingURL=index.css.map */
