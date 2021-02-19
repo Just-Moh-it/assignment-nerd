@@ -62,7 +62,7 @@ body a.scale:hover, html a.scale:hover {
 body .nav, html .nav {
   text-align: center;
   padding: 20px 50px;
-  width: calc(100% - 100px);
+  width: 90%;
 }
 
 body .nav > *, html .nav > * {
@@ -110,6 +110,7 @@ body .nav #collapse-btn, html .nav #collapse-btn {
   display: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-top: 20px !important;
 }
 
 body .nav .nav-link, html .nav .nav-link {
@@ -175,7 +176,7 @@ body main .intro, html main .intro {
 body main .intro .intro-left, html main .intro .intro-left {
   width: 35%;
   display: inline-block;
-  margin-right: 5%;
+  margin-right: 5vw;
 }
 
 body main .intro *, html main .intro * {
@@ -199,7 +200,7 @@ body main .intro h1::after, html main .intro h1::after {
 }
 
 body main .intro .intro-right, html main .intro .intro-right {
-  margin-left: 5%;
+  margin-left: 5vw;
   width: 40%;
   text-align: end;
 }
@@ -330,6 +331,16 @@ body main .intro img, html main .intro img {
   body h1, html h1 {
     font-size: 0.2em;
     line-height: 1.4em !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .nav {
+    padding: 10px 10px !important;
+  }
+  .top-gradient {
+    -webkit-transform: scale(0.35) !important;
+            transform: scale(0.35) !important;
   }
 }
 /*# sourceMappingURL=index.css.map */
