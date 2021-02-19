@@ -30,11 +30,12 @@ body, html{
         padding: 0;
         list-style-type: none;
         text-decoration: none;
+        border: none;
     }
 
     .cta{
         background-color: $green;
-        padding: 10px 40px;
+        padding: 13px 2.2em;
         border-radius: 10px;
         color: white !important;
         font: Product-Bold, $alternatives;
@@ -87,7 +88,9 @@ body, html{
             float: right;
             background-color: white;
             color: $red !important;
-            &::after{
+            
+        }
+        .top-gradient{
                 z-index: -999;
                 width: 400px;
                 height: 400px;
@@ -98,7 +101,13 @@ body, html{
                 background: $red-gradient;
                 border-radius: 50%;
                 overflow: hidden;
-            }
+        }
+        #menu-btn{
+            display: none;
+        }
+        #collapse-btn{
+            display: none;
+            transition: 0.5s;
         }
 
         .nav-link{
@@ -121,24 +130,26 @@ body, html{
                 content: '';
                 left: -100px;
                 bottom: -150px;
-                background: $red-gradient;
+                background: $green-gradient;
                 height: 200px;
                 width: 200px;
                 border-radius: 50%;
+                z-index: -9999;
             }
         }
         section:nth-child(2n)::before{
-            background: $green-gradient !important;
+            background: $red-gradient !important;
             scale: 130%;
             left: auto;
             right: -100px;
         }
         h1{
-            font-size: 3.5rem;
+            font-size: calc(2.9vw + 32px);
             line-height: 1;
             position: relative;
         }
         .intro{
+            width: 100%;
             margin: 0 auto;
             position: relative;
             display: flex;
@@ -146,19 +157,14 @@ body, html{
             align-items: center;
             align-self: center;
 
-            *{
-                    margin: 20px 0;
-            }
-
             .intro-left{
                 width: 35%;
                 display: inline-block;
                 margin-right: 5%;
 
-                *{
-                    margin: 20px 0;
-                }
-
+            }
+            *{
+                margin: 20px 0;
             }
 
             h1{
@@ -191,6 +197,117 @@ body, html{
                 display: block;
             }
 
+        }
+
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    body, html {
+
+        nav{
+            display: none !important;
+        }
+
+        header.active{
+            nav{
+                background: white;
+                float: left;
+                display: flex !important;
+                flex-direction: column;
+                width: 80%;
+                transform: translateX(-20%);
+            }
+            #collapse-btn{
+                transform: translateY(-151%);
+                transition-delay: 1sec;
+                .menu-bar{
+                    &:nth-child(1){
+                        top: 0;
+                        transform: rotate(-45deg);
+                    }
+                    &:nth-child(2){
+                        width: 100%;
+                        top: 0;
+                        transform: rotate(45deg);
+                    }
+                    &:last-child{
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+
+        #nav-btn{
+            display: none;
+        }
+
+        #collapse-btn{
+            display: block !important;
+            height: 30px;
+            width: 40px;
+            position: relative;
+            background: transparent;
+            .menu-bar{
+                height: 5px;
+                width: 100%;
+                position: absolute;
+                background: white;
+                color: red;
+                top: 0;
+                left: 0;
+                border-radius: 4px;
+                &:nth-child(2){
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 90%;
+                }
+                &:nth-child(3){
+                    width: 80%;
+                    top:100%;
+                    transform: translateY(-100%);
+                }
+            }
+        }
+        .top-gradient{
+            scale: 60%;
+        }
+
+        section::before{
+            top: 50%
+        }
+
+        .intro{
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 0 40px;
+            align-content: center;
+            justify-content: center;
+            text-align: center !important;
+            .intro-right{
+                text-align: center !important;
+            }
+            *{
+                width: 100% !important;
+            }
+            h1::after{
+                left: 50%;
+                translate: -50%;
+                scale: 60% !important;
+                margin-bottom: -10px;
+                opacity: 70%;
+            }
+
+        }
+
+        .intro:nth-child(2n){
+            flex-direction: column-reverse;
+        }
+
+        h1{
+            font-size: 0.2em;
+            line-height: 1.4em !important;
         }
     }
 }

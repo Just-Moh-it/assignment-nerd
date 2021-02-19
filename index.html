@@ -9,7 +9,7 @@
     <title>Home: Assignment Nerd</title>
 </head>
 <body>
-    <header class="nav wrapper">
+    <header class="nav wrapper active">
         <img src="./assets/images/logo.png" alt="The Assignment Nerd" class="logo" onclick="window.location = '/';">
         <nav class="nav-list">
             <a href="#" class="nav-link scale">Prices</a>
@@ -17,8 +17,15 @@
             <a href="#" class="nav-link scale">About</a>
             <a href="#" class="nav-link scale">Insta</a>
             <a href="#" class="nav-link scale">FaceBook</a>
+            <a href="#" id="menu-btn" class="right small cta">Contact Us</a>
         </nav>
-        <a href="#" class="right small cta" style="padding: 10px;">Contact Us</a>
+        <a href="#" id="nav-btn" class="right small cta">Contact Us</a>
+        <button class="right" id="collapse-btn" onclick="showMenu(event)">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+        </button>
+        <div class="top-gradient"></div>
     </header>
     <main class="wrapper">
         <!-- 1 -->
@@ -87,6 +94,26 @@
                 <a href="#" class="cta">I'm in for it..</a>
             </div>
         </section>
+        <section></section>
     </main>
+
+    <script>
+
+        function showMenu(event){
+
+            event.preventDefault();
+
+            let element = document.getElementsByTagName('header')[0];
+
+            if(element.classList.contains('active')){
+                element.classList.remove('active');
+            } else {
+                element.classList.add("active");
+            }
+
+
+        }
+
+    </script>
 </body>
 </html>
