@@ -286,7 +286,8 @@ body main .intro img, html main .intro img {
             transform: translateY(-100%);
   }
   body .top-gradient, html .top-gradient {
-    scale: 60%;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
   body section::before, html section::before {
     top: 50%;
@@ -314,7 +315,8 @@ body main .intro img, html main .intro img {
   }
   body .intro h1::after, html .intro h1::after {
     left: 50%;
-    translate: -50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     scale: 60% !important;
     margin-bottom: -10px;
     opacity: 70%;

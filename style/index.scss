@@ -271,11 +271,11 @@ body, html{
             }
         }
         .top-gradient{
-            scale: 60%;
+            transform: scale(0.6);
         }
 
         section::before{
-            top: 50%
+            top: 50%;
         }
 
         .intro{
@@ -293,7 +293,7 @@ body, html{
             }
             h1::after{
                 left: 50%;
-                translate: -50%;
+                transform: translateX(-50%);
                 scale: 60% !important;
                 margin-bottom: -10px;
                 opacity: 70%;
