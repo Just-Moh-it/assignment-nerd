@@ -11,7 +11,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 100vh;
   position: relative;
   font: 20px Product, Arial, Helvetica;
   overflow-x: hidden;
@@ -26,6 +26,15 @@ body *, html * {
   border: none;
 }
 
+body .right-align, html .right-align {
+  display: block;
+  text-align: end;
+}
+
+body .helvetica, html .helvetica {
+  font-family: Helvetica, Arial, Helvetica;
+}
+
 body .cta, html .cta {
   background-color: #008B6F;
   padding: 13px 2.2em;
@@ -38,12 +47,18 @@ body .cta:not(.small):hover, html .cta:not(.small):hover {
   opacity: 0.9;
 }
 
-body .small, html .small {
+body .cta.small, html .cta.small {
   padding: 10px !important;
 }
 
-body .red, html .red {
+body .cta.red, html .cta.red {
   background-color: #E8505B;
+}
+
+body .cta.white, html .cta.white {
+  background: white;
+  color: #E8505B !important;
+  font-size: 1em;
 }
 
 body a, html a {
@@ -59,6 +74,13 @@ body a.scale:hover, html a.scale:hover {
           box-shadow: 0 0 5px rgba(96, 96, 96, 0.1);
 }
 
+body .logo-top, html .logo-top {
+  margin-right: 0;
+  float: left !important;
+  cursor: pointer;
+  width: 235px;
+}
+
 body .nav, html .nav {
   text-align: center;
   padding: 20px 50px;
@@ -69,12 +91,6 @@ body .nav > *, html .nav > * {
   display: inline-block;
   color: #008B6F;
   vertical-align: middle;
-}
-
-body .nav .logo, html .nav .logo {
-  margin-right: 0;
-  float: left !important;
-  cursor: pointer;
 }
 
 body .nav .nav-list, html .nav .nav-list {
@@ -131,7 +147,7 @@ body main section, html main section {
   position: relative;
 }
 
-body main section::before, html main section::before {
+body main .intro::before, html main .intro::before {
   position: absolute;
   content: '';
   left: -100px;
@@ -143,11 +159,15 @@ body main section::before, html main section::before {
   z-index: -9999;
 }
 
-body main section:nth-child(2n)::before, html main section:nth-child(2n)::before {
+body main .intro:nth-child(2n)::before, html main .intro:nth-child(2n)::before {
   background: linear-gradient(45deg, #E8505B, rgba(232, 80, 91, 0.5)) !important;
   scale: 130%;
   left: auto;
   right: -100px;
+}
+
+body main .intro:last-of-type::before, html main .intro:last-of-type::before {
+  display: none !important;
 }
 
 body main h1, html main h1 {
@@ -216,11 +236,125 @@ body main .intro img, html main .intro img {
   display: block;
 }
 
+body main .stretch, html main .stretch {
+  background: linear-gradient(45deg, #E8505B, rgba(232, 80, 91, 0.5));
+  padding: 50px;
+  color: white !important;
+  text-align: center;
+}
+
+body main .stretch .services, html main .stretch .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main .stretch .service, html main .stretch .service {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+body main .stretch *, html main .stretch * {
+  margin: 10px;
+}
+
+body footer, html footer {
+  background: #008B6F !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw;
+  color: white !important;
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body footer .logo-bottom, html footer .logo-bottom {
+  width: 100%;
+}
+
+body footer .footer-element, html footer .footer-element {
+  width: 400px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+body footer .footer-element:nth-child(1) > *, html footer .footer-element:nth-child(1) > * {
+  margin-top: 10px;
+}
+
+body footer nav, html footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body footer .social-links, html footer .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body footer .social-links .bi, html footer .social-links .bi {
+  font-size: 1.5em;
+}
+
+body footer .details, html footer .details {
+  font-size: 1em;
+  text-align: start;
+}
+
+body footer .details svg, html footer .details svg {
+  padding-right: 10px;
+  stroke: 30px;
+}
+
+body footer .details i, html footer .details i {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+body footer .details a, html footer .details a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 4vw 5px 2vw;
+}
+
+/*
+
+=================== Responsive ===================== 
+
+*/
 @media only screen and (max-width: 880px) {
-  body nav, html nav {
+  body .nav-list, html .nav-list {
     display: none !important;
   }
-  body header.active nav, html header.active nav {
+  body header.active .nav-list, html header.active .nav-list {
     background: white;
     float: left;
     display: -webkit-box !important;
@@ -332,8 +466,31 @@ body main .intro img, html main .intro img {
     font-size: 0.2em;
     line-height: 1.4em !important;
   }
+  body footer, html footer {
+    padding: 10px !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body footer .footer-element, html footer .footer-element {
+    margin: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-bottom: dashed white 3px;
+  }
+  body footer .footer-element:last-of-type, html footer .footer-element:last-of-type {
+    border-bottom: none;
+  }
 }
 
+/*
+
+===================Iphones Only===================== 
+
+*/
 @media only screen and (max-width: 450px) {
   .nav {
     padding: 10px 10px !important;
