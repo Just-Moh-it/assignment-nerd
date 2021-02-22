@@ -238,7 +238,7 @@ body main .intro img, html main .intro img {
 
 body main .stretch, html main .stretch {
   background: linear-gradient(45deg, #E8505B, rgba(232, 80, 91, 0.5));
-  padding: 50px;
+  padding: 1vw !important;
   color: white !important;
   text-align: center;
 }
@@ -251,7 +251,7 @@ body main .stretch .services, html main .stretch .services {
       flex-wrap: wrap;
 }
 
-body main .stretch .service, html main .stretch .service {
+body main .stretch .services *, html main .stretch .services * {
   display: inline-block;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;

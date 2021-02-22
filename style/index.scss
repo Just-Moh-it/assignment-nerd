@@ -224,19 +224,20 @@ body, html{
         }
         .stretch{
             background: $red-gradient;
-            padding: 50px;
+            padding: 1vw !important;
             color: white !important;
             text-align: center;
             .services{
                 display: flex;
                 flex-wrap: wrap;
+                *{
+                    display: inline-block;
+                    background: rgba($color:white, $alpha: 0.3);
+                    border-radius: 10px;
+                    padding: 5px 10px;
+                }
             }
-            .service{
-                display: inline-block;
-                background: rgba($color:white, $alpha: 0.3);
-                border-radius: 10px;
-                padding: 5px 10px;
-            }
+            
             *{
                 margin: 10px;
             }
