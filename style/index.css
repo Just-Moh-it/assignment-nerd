@@ -238,7 +238,7 @@ body main .intro img, html main .intro img {
 
 body main .stretch, html main .stretch {
   background: linear-gradient(45deg, #E8505B, rgba(232, 80, 91, 0.5));
-  padding: 1vw !important;
+  padding: 3vw 1vw !important;
   color: white !important;
   text-align: center;
 }
@@ -249,6 +249,9 @@ body main .stretch .services, html main .stretch .services {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body main .stretch .services *, html main .stretch .services * {

@@ -224,12 +224,13 @@ body, html{
         }
         .stretch{
             background: $red-gradient;
-            padding: 1vw !important;
+            padding: 3vw 1vw !important;
             color: white !important;
             text-align: center;
             .services{
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: center;
                 *{
                     display: inline-block;
                     background: rgba($color:white, $alpha: 0.3);
