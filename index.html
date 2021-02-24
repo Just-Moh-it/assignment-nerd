@@ -155,6 +155,15 @@
             <p>So, what're you waiting for? Get your assignments done today!</p>
             <button class="cta white">Order Now</button>
         </section>
+        <section class="reviews-section">
+            <h1>What our customers say..</h1>
+            <h3>Hear from the people that had past experiences with us.</h3>
+            <div class="reviews">
+                <article class="review">A friend of mine suggested these people for getting my assignments done. Trust me these people are a blessing in disguise! You better believe me on this, they’ll provide the best work. <span class="right-align">- Anushka Rathi, Jaipur, India</span></article>
+                <article class="review">I am a first year management student who though loves her subject but the assignments were a nightmare. I’m so glad I found theassignment.nerd on instagram. Seriously the best things that happened to me in 2020. Thank you guys for existing and saving my ass all the time ❤️. <span class="right-align">- Michelle Osman, Washington DC</span></article>
+                <article class="review">From being a clueless backbencher to scoring the highest in my class, the journey has been all because of these people. Thank you doing my assignments and helping with my tests. Wont ever forget this. Greatful. <span class="right-align">- Mallory Romero, Ontario, Canada</span></article>
+            </div>
+        </section>
     </main>
 
 <!-- Footer -->
@@ -183,13 +192,13 @@
             <h2>Contact us</h2>
             <div class="details">
                 <div class="details-row">
-                    <a href="mailto://theassignmentnerd@gmail.com">
+                    <a href="mailto:theassignmentnerd@gmail.com">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
                         </svg>
                         theassignmentnerd@gmail.com
                     </a>
-                    <a href="<? echo ($detect->isMobile()) ? 'tel' : 'callto'; ?> :+91-79766-74193">
+                    <a href="tel:+91-79766-74193">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                         </svg>
@@ -237,6 +246,9 @@
 
 
         }
+
+        const node = document.querySelector('.services');
+        [...Array(3)].forEach(_ => node.parentNode.insertBefore(node.cloneNode(true), node));
 
     </script>
 </body>

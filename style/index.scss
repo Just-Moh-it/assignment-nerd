@@ -224,15 +224,30 @@ body, html{
         }
         .stretch{
             background: $red-gradient;
-            padding: 3vw 1vw !important;
+            padding: 1vw 1vw !important;
             color: white !important;
             text-align: center;
+
+            // Animations
+            @keyframes marquee {
+            0% {
+                transform: translateX(0%)
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+            }
             .services{
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
+                align-items: center;
                 justify-content: center;
+                // animations
+                // animation: marquee 10s linear infinite;
+
                 *{
                     display: inline-block;
+                    flex: auto;
                     background: rgba($color:white, $alpha: 0.3);
                     border-radius: 10px;
                     padding: 5px 10px;
@@ -240,7 +255,33 @@ body, html{
             }
             
             *{
-                margin: 10px;
+                margin: 5px;
+            }
+        }
+
+        .reviews-section{
+            text-align: center;
+            margin: 0 5vw 5vw;
+            *{
+                margin-top: 30px;
+            }
+            .reviews{
+                display: flex;
+                justify-content: center;
+                .review{
+                    background-color: white;
+                    padding: 30px;
+                    border-radius: 30px;
+                    box-shadow: 0 0 5px $grey;
+                    width: 400px;
+                    &:nth-of-type(2n), &:hover{
+                        scale: 1.1;
+                        z-index: 99;
+                    }
+                    &:hover{
+                        z-index: 999;
+                    }
+                }
             }
         }
     }
@@ -433,13 +474,7 @@ body, html{
             align-items: center;
             justify-content: center;
             .footer-element{
-                margin: auto !important;
-                margin-left: 0 !important;
-                margin-right: 0 !important;
-                border-bottom: dashed white 3px;
-                &:last-of-type{
-                    border-bottom: none;
-                }
+                margin: 30px 0 !important;
             }
         }
     }

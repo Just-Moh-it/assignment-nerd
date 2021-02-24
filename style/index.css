@@ -238,17 +238,42 @@ body main .intro img, html main .intro img {
 
 body main .stretch, html main .stretch {
   background: linear-gradient(45deg, #E8505B, rgba(232, 80, 91, 0.5));
-  padding: 3vw 1vw !important;
+  padding: 1vw 1vw !important;
   color: white !important;
   text-align: center;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 body main .stretch .services, html main .stretch .services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -256,13 +281,52 @@ body main .stretch .services, html main .stretch .services {
 
 body main .stretch .services *, html main .stretch .services * {
   display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   padding: 5px 10px;
 }
 
 body main .stretch *, html main .stretch * {
-  margin: 10px;
+  margin: 5px;
+}
+
+body main .reviews-section, html main .reviews-section {
+  text-align: center;
+  margin: 0 5vw 5vw;
+}
+
+body main .reviews-section *, html main .reviews-section * {
+  margin-top: 30px;
+}
+
+body main .reviews-section .reviews, html main .reviews-section .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .reviews-section .reviews .review, html main .reviews-section .reviews .review {
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 5px #606060;
+          box-shadow: 0 0 5px #606060;
+  width: 400px;
+}
+
+body main .reviews-section .reviews .review:nth-of-type(2n), body main .reviews-section .reviews .review:hover, html main .reviews-section .reviews .review:nth-of-type(2n), html main .reviews-section .reviews .review:hover {
+  scale: 1.1;
+  z-index: 99;
+}
+
+body main .reviews-section .reviews .review:hover, html main .reviews-section .reviews .review:hover {
+  z-index: 999;
 }
 
 body footer, html footer {
@@ -479,13 +543,7 @@ body footer .details a, html footer .details a {
             justify-content: center;
   }
   body footer .footer-element, html footer .footer-element {
-    margin: auto !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    border-bottom: dashed white 3px;
-  }
-  body footer .footer-element:last-of-type, html footer .footer-element:last-of-type {
-    border-bottom: none;
+    margin: 30px 0 !important;
   }
 }
 
