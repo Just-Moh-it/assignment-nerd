@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /src/prices.html
+Allow: /src/about.html
+Allow: /src/contact.html
+Allow: /src/gallery.html
+Allow: /*
