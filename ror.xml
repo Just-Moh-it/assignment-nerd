@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/">
+     <channel>
+          <title>ROR Sitemap for http://assignmentnerd.ga/</title>
+          <link>http://assignmentnerd.ga/</link>
+
+          <item>
+               <link>https://www.assignmentnerd.ga/</link>
+               <title>
+                    Super Affordable Assignment Completion Service: Assignment Nerd
+               </title>
+               <description>Affordable with $39 / 1000 words, Plagiarism-Free, Under-deadline assignment writing service
+                    managed and run by PHD writers. We'll do the research, edits, and add attractive illustrations for
+                    free. 10% off first order. Get best quality work, pay using hassle-free payment methods.
+               </description>
+               <ror:updatePeriod></ror:updatePeriod>
+               <ror:sortOrder>0</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.assignmentnerd.ga/prices.html</link>
+               <title>
+                    Our previous assignments: Assignment Nerd
+               </title>
+               <description>
+                    See how much you can expect to pay us fro your assignments and which plan to choose according to your requirements.
+               </description>
+               <ror:updatePeriod></ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.assignmentnerd.ga/gallery.html</link>
+               <title>
+                    Our previous assignments (Gallery) : Assignment Nerd
+               </title>
+               <description>
+                    View some of our previous assignments. This is the qualtiy of work you cat expect to get from us. We'll be waiting over on the other side to hear from you.
+               </description>
+               <ror:updatePeriod></ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.assignmentnerd.ga/about.html</link>
+               <title>
+                    Our Journey (About): Assignment Nerd
+               </title>
+               <description>
+                    
+               </description>
+               <ror:updatePeriod></ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.assignmentnerd.ga/T-and-C.html</link>
+               <title>
+                    Terms and Conditions: Assignment Nerd
+               </title>
+               <description>Affordable with $39 / 1000 words, Plagiarism-Free, Under-deadline assignment writing service
+                    managed and run PHD. writers. We'll do the research, edits, and add attractive illustrations for
+                    free. 10% off first order. Get best quality work, pay using hassle-free payment methods.
+               </description>
+               <ror:updatePeriod></ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.assignmentnerd.ga/contact.html</link>
+               <title>
+                    Contact Us: Assignment Nerd
+               </title>
+               <description>Affordable with $39 / 1000 words, Plagiarism-Free, Under-deadline assignment writing service
+                    managed and run PHD. writers. We'll do the research, edits, and add attractive illustrations for
+                    free. 10% off first order. Get best quality work, pay using hassle-free payment methods.
+               </description>
+               <ror:updatePeriod></ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+     </channel>
+</rss>

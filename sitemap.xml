@@ -1,0 +1,32 @@
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://www.assignmentnerd.ga/</loc>
+        <lastmod>2021-03-11T17:05:16+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://www.assignmentnerd.ga/prices.html</loc>
+        <lastmod>2021-03-11T17:05:16+00:00</lastmod>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://www.assignmentnerd.ga/gallery.html</loc>
+        <lastmod>2021-03-11T17:05:16+00:00</lastmod>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://www.assignmentnerd.ga/about.html</loc>
+        <lastmod>2021-03-11T17:05:16+00:00</lastmod>
+        <priority>0.50</priority>
+    </url>
+    <url>
+        <loc>https://www.assignmentnerd.ga/T-and-C.html</loc>
+        <lastmod>2021-03-11T17:05:16+00:00</lastmod>
+        <priority>0.40</priority>
+    </url>
+    <url>
+        <loc>https://www.assignmentnerd.ga/contact.html</loc>
+        <lastmod>2021-03-11T17:05:16+00:00</lastmod>
+        <priority>0.40</priority>
+    </url>
+</urlset>

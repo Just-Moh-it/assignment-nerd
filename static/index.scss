@@ -322,6 +322,9 @@ body, html{
             padding: 20px 5vw;
             ol{padding-left: clamp(20px, 4vw, 40px);}
         }
+        &.contact{
+            text-align: center;
+        }
     }
 
     //  Footer
