@@ -248,7 +248,7 @@ body, html{
                     animation: marquee 40s linear infinite;
                     white-space: nowrap;
                     // animations
-                    
+
                     .one-col{
                         .service{
                             margin: 0 10px;
@@ -267,13 +267,13 @@ body, html{
                     }
 
                     &:nth-of-type(2), &:nth-of-type(6){
-                        transform: translateX(-20%);
+                        transform: translateX(-30%);
                     }
                     &:nth-of-type(3), &:nth-of-type(7){
-                        transform: translateX(-5%);
+                        transform: translateX(10%);
                     }
                     &:nth-of-type(4), &:nth-of-type(8){
-                        transform: translateX(-10%);
+                        transform: translateX(-15%);
                     }
                 }
 

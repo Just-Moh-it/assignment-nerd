@@ -294,18 +294,18 @@ body main.index .stretch .services *, html main.index .stretch .services * {
 }
 
 body main.index .stretch .services:nth-of-type(2), body main.index .stretch .services:nth-of-type(6), html main.index .stretch .services:nth-of-type(2), html main.index .stretch .services:nth-of-type(6) {
-  -webkit-transform: translateX(-20%);
-          transform: translateX(-20%);
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
 }
 
 body main.index .stretch .services:nth-of-type(3), body main.index .stretch .services:nth-of-type(7), html main.index .stretch .services:nth-of-type(3), html main.index .stretch .services:nth-of-type(7) {
-  -webkit-transform: translateX(-5%);
-          transform: translateX(-5%);
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
 }
 
 body main.index .stretch .services:nth-of-type(4), body main.index .stretch .services:nth-of-type(8), html main.index .stretch .services:nth-of-type(4), html main.index .stretch .services:nth-of-type(8) {
-  -webkit-transform: translateX(-10%);
-          transform: translateX(-10%);
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
 }
 
 body main.index .stretch *, html main.index .stretch * {
