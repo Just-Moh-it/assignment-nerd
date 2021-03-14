@@ -177,8 +177,8 @@ body main.index .intro, html main.index .intro {
 
 body main.index .intro:nth-child(2n)::before, html main.index .intro:nth-child(2n)::before {
   background: linear-gradient(45deg, #E8505B, rgba(232, 80, 91, 0.5)) !important;
-  -webkit-transform: scale(130%);
-          transform: scale(130%);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
   left: auto;
   right: -100px;
 }
@@ -337,8 +337,8 @@ body main.index .reviews-section .reviews .review, html main.index .reviews-sect
   padding: clamp(10px, 3vw, 40px);
   font-size: clamp(16px, 2vw, 18px);
   border-radius: 30px;
-  -webkit-box-shadow: 0 0 5px #606060;
-          box-shadow: 0 0 5px #606060;
+  -webkit-box-shadow: 0 3px 5px rgba(96, 96, 96, 0.3);
+          box-shadow: 0 3px 5px rgba(96, 96, 96, 0.3);
   max-width: 400px;
 }
 
@@ -552,10 +552,8 @@ body footer .details a, html footer .details a {
   }
   body .intro h1::after, html .intro h1::after {
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    -webkit-transform: scale(60%) !important;
-            transform: scale(60%) !important;
+    -webkit-transform: translateX(-50%) scale(0.8) !important;
+            transform: translateX(-50%) scale(0.8) !important;
     margin-bottom: -10px;
     opacity: 70%;
   }
@@ -579,9 +577,10 @@ body footer .details a, html footer .details a {
         -ms-flex-align: center !important;
             align-items: center !important;
   }
-  body .reviews-section .reviews .review:nth-of-type(2), html .reviews-section .reviews .review:nth-of-type(2) {
-    -webkit-transform: scale(1) !important;
-            transform: scale(1) !important;
+  body .reviews-section .reviews .review, html .reviews-section .reviews .review {
+    margin-top: 10px !important;
+    -webkit-box-shadow: 0 5px 10px rgba(96, 96, 96, 0.3) !important;
+            box-shadow: 0 5px 10px rgba(96, 96, 96, 0.3) !important;
   }
   body .reviews-section .reviews .review:nth-of-type(2):hover, html .reviews-section .reviews .review:nth-of-type(2):hover {
     -webkit-transform: scale(1.1) !important;
