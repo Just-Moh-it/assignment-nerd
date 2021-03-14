@@ -269,14 +269,12 @@ body main.index .stretch, html main.index .stretch {
 
 body main.index .stretch .services, html main.index .stretch .services {
   text-align: start !important;
-  width: 5000px;
   margin: 10px 0;
   height: 50px;
   position: relative;
   -webkit-animation: marquee 40s linear infinite;
           animation: marquee 40s linear infinite;
-  overflow: hidden;
-  overflow-wrap: normal;
+  white-space: nowrap;
 }
 
 body main.index .stretch .services .one-col .service, html main.index .stretch .services .one-col .service {
@@ -402,15 +400,6 @@ body footer .footer-element, html footer .footer-element {
 
 body footer .footer-element:nth-child(1) > *, html footer .footer-element:nth-child(1) > * {
   margin-top: 10px;
-}
-
-body footer nav, html footer nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 body footer .social-links, html footer .social-links {

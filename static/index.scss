@@ -242,15 +242,13 @@ body, html{
                 }
                 .services{
                     text-align: start !important;
-                    width: 5000px;
                     margin: 10px 0;
                     height: 50px;
                     position: relative;
                     animation: marquee 40s linear infinite;
-                    overflow: hidden;
-                    overflow-wrap: normal;
+                    white-space: nowrap;
                     // animations
-
+                    
                     .one-col{
                         .service{
                             margin: 0 10px;
@@ -357,10 +355,7 @@ body, html{
             }
         }
 
-        nav{
-            display: flex;
-            justify-content: space-evenly;
-        }
+        
 
         .social-links{
             display: flex;
