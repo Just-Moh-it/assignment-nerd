@@ -1,4 +1,6 @@
 User-agent: *
+Allow: /sitemaps.xml
+Allow: /sitemap.xml
 Allow: /
 Allow: /index.html
 Allow: /src/prices.html
