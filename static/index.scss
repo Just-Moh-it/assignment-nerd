@@ -323,6 +323,13 @@ body, html{
         &.contact{
             text-align: center;
         }
+        &.prices{
+            text-align: center;
+            padding: 20px 5vw;
+            .cta.small{
+                padding-top: 6px !important;
+            }
+        }
     }
 
     //  Footer
@@ -347,7 +354,10 @@ body, html{
             width: 400px;
             margin: 0 20px;
             text-align: center;
-
+            nav{
+                display: flex;
+                justify-content: space-evenly;
+            }
             &:nth-child(1){
                 & > *{
                     margin-top: 10px;
@@ -497,6 +507,9 @@ body, html{
                 opacity: 70%;
             }
 
+        }
+        main:not(.intro){
+            margin-top: 80px;
         }
 
         .reviews-section{

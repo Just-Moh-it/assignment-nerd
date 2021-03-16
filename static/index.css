@@ -368,6 +368,15 @@ body main.contact, html main.contact {
   text-align: center;
 }
 
+body main.prices, html main.prices {
+  text-align: center;
+  padding: 20px 5vw;
+}
+
+body main.prices .cta.small, html main.prices .cta.small {
+  padding-top: 6px !important;
+}
+
 body footer, html footer {
   background: #008B6F !important;
   -webkit-box-sizing: border-box;
@@ -396,6 +405,15 @@ body footer .footer-element, html footer .footer-element {
   width: 400px;
   margin: 0 20px;
   text-align: center;
+}
+
+body footer .footer-element nav, html footer .footer-element nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 body footer .footer-element:nth-child(1) > *, html footer .footer-element:nth-child(1) > * {
@@ -556,6 +574,9 @@ body footer .details a, html footer .details a {
             transform: translateX(-50%) scale(0.8) !important;
     margin-bottom: -10px;
     opacity: 70%;
+  }
+  body main:not(.intro), html main:not(.intro) {
+    margin-top: 80px;
   }
   body .reviews-section, html .reviews-section {
     padding-top: 0;
