@@ -1,308 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Website Integration. Eg: Google, Email -->
-    <meta name="google-site-verification" content="raLGdG5RxptmxfDgqQl3QiWCNq9FVi3i8dYJyKwR4KA" />
+    <meta
+      name="google-site-verification"
+      content="raLGdG5RxptmxfDgqQl3QiWCNq9FVi3i8dYJyKwR4KA"
+    />
     <meta name="yandex-verification" content="b907b0e6af3d5093" />
+    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./static/index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./static/index.css" />
     
     <!-- Social Media Preview OG tags -->
-    <meta property="og:image" content="https://www.assignmentnerd.ga/static/assets/images/brand/social_preview.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="959">
-    <meta property="og:image:height" content="395">
-    <meta property="og:url" content="https://www.assignmentnerd.ga/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Assignment Nerd: The best assignment completion service">
-    <meta property="og:description" content="Constantly providing under-deadline, plagiarism-free assignments.">
+    <meta
+      property="og:image"
+      content="https://www.assignmentnerd.tech/static/assets/images/brand/social_preview.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="959" />
+    <meta property="og:image:height" content="395" />
+    <meta property="og:url" content="https://www.assignmentnerd.tech/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Assignment Nerd: The best assignment completion service"
+    />
+    <meta
+      property="og:description"
+      content="Constantly providing under-deadline, plagiarism-free assignments."
+    />
     <!-- Twitter OG tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="assignmentnerd.ga">
-    <meta property="twitter:url" content="https://www.assignmentnerd.ga/">
-    <meta name="twitter:title" content="Assignment Nerd: The best assignment completion service">
-    <meta name="twitter:description" content="Constantly providing under-deadline, plagiarism-free assignments.">
-    <meta name="twitter:image" content="https://www.assignmentnerd.ga/static/assets/images/brand/social_preview.png">
-    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="assignmentnerd.tech" />
+    <meta property="twitter:url" content="https://www.assignmentnerd.tech/" />
+    <meta
+      name="twitter:title"
+      content="Assignment Nerd: The best assignment completion service"
+    />
+    <meta
+      name="twitter:description"
+      content="Constantly providing under-deadline, plagiarism-free assignments."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.assignmentnerd.tech/static/assets/images/brand/social_preview.png"
+    />
+
     <!-- Header Content -->
-    <link rel="icon" href="./static/assets/images/brand/icon.png">
-    <title>
-Super Affordable Assignment Completion Service: Assignment Nerd
-</title>
-    <meta name="description" content="Affordable with $39 / 1000 words, Plagiarism-Free, Under-deadline assignment writing service managed and run PHD. writers. We'll do the research, edits, and add attractive illustrations for free. 10% off first order. Get best quality work, pay using hassle-free payment methods.">
-
-</head>
-<body>
+    <link rel="icon" href="./static/assets/images/brand/icon.png" />
+    <title> Super Affordable Assignment
+Completion Service: Assignment Nerd </title>
+    <meta
+      name="description"
+      content="Affordable with $39 / 1000 words, Plagiarism-Free, Under-deadline assignment writing service managed and run PHD. writers. We'll do the research, edits, and add attractive illustrations for free. 10% off first order. Get best quality work, pay using hassle-free payment methods."
+    />
+  </head>
+  <body>
     <header class="nav wrapper">
-        <img src="./static/assets/images/brand/logo.png" alt="The Assignment Nerd" class="logo-top" onclick="window.location = '/';">
-        <nav class="nav-list">
-            <a href="./prices.html" class="nav-link scale">Prices</a>
-            <a href="./gallery.html" class="nav-link scale">Gallery</a>
-            <a href="./about.html" class="nav-link scale">About</a>
-            <a href="./T-and-C.html" class="nav-link scale">T & C</a>
-            <a href="https://www.facebook.com/Assignment.nerd" class="nav-link scale">FaceBook</a>
-            <a href="./contact.html" id="menu-btn" class="right small cta">Contact Us</a>
-        </nav>
-        <a href="https://api.whatsapp.com/send/?phone=917976674193" title="Chat on WhatsApp!" id="nav-btn" class="right small cta">Order Now</a>
-        <button class="right" id="collapse-btn" onclick="showMenu(event)">
-            <span class="menu-bar"></span>
-            <span class="menu-bar"></span>
-            <span class="menu-bar"></span>
-        </button>
-        <div class="top-gradient"></div>
+      <img
+        src="./static/assets/images/brand/logo.png"
+        alt="The Assignment Nerd"
+        class="logo-top"
+        onclick="window.location = '/';"
+      />
+      <nav class="nav-list">
+        <a href="./prices.html" class="nav-link scale">Prices</a>
+        <a href="./gallery.html" class="nav-link scale">Gallery</a>
+        <a href="./about.html" class="nav-link scale">About</a>
+        <a href="./T-and-C.html" class="nav-link scale">T & C</a>
+        <a
+          href="https://www.facebook.com/Assignment.nerd"
+          class="nav-link scale"
+          >FaceBook</a
+        >
+        <a href="./contact.html" id="menu-btn" class="right small cta"
+          >Contact Us</a
+        >
+      </nav>
+      <a
+        href="https://wa.me/message/4SBCCYBE7464O1"
+        title="Chat on WhatsApp!"
+        id="nav-btn"
+        class="right small cta"
+        >Order Now</a
+      >
+      <button class="right" id="collapse-btn" onclick="showMenu(event)">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+      <div class="top-gradient"></div>
     </header>
-
 
     <!-- ========= Main Website ========= -->
     
 
-    <main class="wrapper index">
-        <!-- 1 -->
-        <section class="intro" id="1">
-            <div class="intro-left">
-                <h1 class="hero">Say good-bye to assingment stress</h1>
-                <p class="content">
-                    Too many assignments, too little time? Well, don’t worry cause you’ve reached the right place. Leave the stress behind. Get professional help for your assignments.
-                </p>
-                <a href="https://api.whatsapp.com/send/?phone=917976674193" title="Chat on WhatsApp!" class="cta red">Try it out..</a>
-            </div>
-            <img src="./static/assets/images/intro/1.png" alt="Stress Buster Image" class="intro-right">
-        </section>
-        <!-- 2 -->
-        <section class="intro" id="2">
-            <img src="./static/assets/images/intro/2.png" alt="Stress Buster Image" class="intro-left">
-            <div class="intro-right">
-                <h1 class="hero">Zero Plagiarism Assurity</h1>
-                <p class="content">
-                    We work very hard to ensure that the work we do for you is authentic, and original. Keeping no  stones unturned, so you get nothing but original.
-                </p>
-                <a href="https://api.whatsapp.com/send/?phone=917976674193" title="Chat on WhatsApp!" class="cta">I'm in for it..</a>
-            </div>
-        </section>
-        <!-- 3 -->
-        <section class="intro" id="3">
-            <div class="intro-left">
-                <h1 class="hero">Unlimited ways to customize, get it done your way.</h1>
-                <p class="content">
-                    Whether you want your assignment in PPT, Word Document or even in Excel format, we’ve got you covered. We even make custom illustrations for making the work more attractive and eye-catchy.
-                </p>
-                <a href="https://api.whatsapp.com/send/?phone=917976674193" title="Chat on WhatsApp!" class="cta red">Try it out..</a>
-            </div>
-            <img src="./static/assets/images/intro/3.png" alt="Stress Buster Image" class="intro-right">
-        </section>
-        <!-- 4 -->
-        <section class="intro" id="4">
-            <img src="./static/assets/images/intro/4.png" alt="Stress Buster Image" class="intro-left">
-            <div class="intro-right">
-                <h1 class="hero">Unlimited edits, make last minute changes</h1>
-                <p class="content">
-                    Either it’s a very rare typo, or a major change of topic, we can do it all. Still not satisfied? Request a full re-write of the assignment at no extra cost.
-                </p>
-                <a href="https://api.whatsapp.com/send/?phone=917976674193" title="Chat on WhatsApp!" class="cta">Sign Me Up!</a>
-            </div>
-        </section>
-        <!-- 5 -->
-        <section class="intro" id="5">
-            <div class="intro-left">
-                <h1 class="hero">Always well under the deadlines</h1>
-                <p class="content">
-                    The heading says it all. With over 280 assignments and counting, we’ve never failed to deliver on the deadlines.
-                </p>
-                <a href="https://api.whatsapp.com/send/?phone=917976674193" title="Chat on WhatsApp!" class="cta red">Try it out..</a>
-            </div>
-            <img src="./static/assets/images/intro/5.png" alt="Stress Buster Image" class="intro-right">
-        </section>
-        <!-- 6 -->
-        <section class="intro" id="6">
-            <img src="./static/assets/images/intro/6.png" alt="Stress Buster Image" class="intro-left">
-            <div class="intro-right">
-                <h1 class="hero">The most experienced team you can find</h1>
-                <p class="content">
-                    Our team of industry experts will definitely land your assignment in the top lists. With over 7 years of experience in writing assignments, you could surely leave it up to us. 
-                </p>
-                <a href="https://api.whatsapp.com/send/?phone=917976674193" title="Chat on WhatsApp!" class="cta">I'm in for it..</a>
-            </div>
-        </section>
-        <section class="stretch">
-            <h1>What services we offer..</h1>
-            <h3>An assignment may include the following:</h3>
-            <div class="services">
-                <span class="one-col">
-                    <div class="service">Reaserch</div>
-                    <div class="service">Homework</div>
-                    <div class="service">English Writing</div>
-                    <div class="service">Article</div>
-                    <div class="service">Blogspot</div>
-                    <div class="service">Resume / CV</div>
-                    <div class="service">Cover Letter</div>
-                    <div class="service">Thesis</div>
-                    <div class="service">Essay</div>
-                    <div class="service">Tutorials</div>
-                    <div class="service">Powerpoint</div>
-                    <div class="service">PPT</div>
-                    <div class="service">MindMaps</div>
-                    <div class="service">Personal Statements</div>
-                    <div class="service">Motivation Letter</div>
-                    <div class="service">Business Propsal</div>
-                    <div class="service">Business Portofolio</div>
-                    <div class="service">Interview</div>
-                    <div class="service">Preparation for Internship / Job</div>
-                    <div class="service">Practical Files</div>
-                    <div class="service">Python</div>
-                    <div class="service">HTML</div>
-                    <div class="service">CSS</div>
-                    <div class="service">Javascript</div>
-                    <div class="service">React JS</div>
-                </span>
-            </div>
-            <h3>And, much more...</h3>
-            <h1>In numerous Subjects</h1>
-            <div class="services">
-                <span class="one-col">
-                    <div class="service">English</div>
-                    <div class="service">Pshycology</div>
-                    <div class="service">Logic</div>
-                    <div class="service">Biology</div>
-                    <div class="service">Chemistry</div>
-                    <div class="service">Computer Science</div>
-                    <div class="service">Physics</div>
-                    <div class="service">Business Studies</div>
-                    <div class="service">Management</div>
-                    <div class="service">Physical Education</div>
-                    <div class="service">Law</div>
-                    <div class="service">Political Sciences</div>
-                    <div class="service">EVS</div>
-                    <div class="service">Humanities</div>
-                    <div class="service">Commerce</div>
-                    <div class="service">Philosophy</div>
-                    <div class="service">Botany</div>
-                    <div class="service">Zoology</div>
-                    <div class="service">Arts & Humanitites</div>
-                    <div class="service">Building and Planning</div>
-                    <div class="service">Computer and IT</div>
-                    <div class="service">Design</div>
-                    <div class="service">Nursing</div>
-                    <div class="service">Councelling</div>
-                    <div class="service">Social Science</div>
-                    <div class="service">Technology</div>
-                    <div class="service">Music</div>
-                    <div class="service">Philanthropy</div>
-                    <div class="service">Literature</div>
-                    <div class="service">Ethics</div>
-                    <div class="service">Data Analysis</div>
-                    <div class="service">Architecture</div>
-                    <div class="service">Communications</div>
-                    <div class="service">Language</div>
-                </span>
-            </div>
-            <p>And Much More..</p>
-        </section>
-        <section class="reviews-section">
-            <h1>What our customers say..</h1>
-            <h3>Hear from the people that had past experiences with us.</h3>
-            <div class="reviews">
-                <article class="review">A friend of mine suggested these people for getting my assignments done. Trust me these people are a blessing in disguise! You better believe me on this, they’ll provide the best work. <span class="right-align">- Anushka Rathi, Jaipur, India</span></article>
-                <article class="review">I am a first year management student who though loves her subject but the assignments were a nightmare. I’m so glad I found Assignment.Nerd on instagram. Seriously the best things that happened to me in 2020. Thank you guys for existing and saving my ass all the time ❤️. <span class="right-align">- Michelle Osman, Washington DC</span></article>
-                <article class="review">From being a clueless backbencher to scoring the highest in my class, the journey has been all because of these people. Thank you doing my assignments and helping with my tests. Wont ever forget this. Greatful. <span class="right-align">- Mallory Romero, Ontario, Canada</span></article>
-            </div>
-            <h1>So, what're you waiting for..?</h1>
-            <p>So, what're you waiting for? Get your assignments done today!</p>
-            <a href="https://api.whatsapp.com/send/?phone=917976674193" title="Chat on WhatsApp!" class="cta red">Get it done Now!</a>
-        </section>
-    </main>
-
+<main class="wrapper index">
+  <!-- 1 -->
+  <section class="intro" id="1">
+    <div class="intro-left">
+      <h1 class="hero">Say good-bye to assingment stress</h1>
+      <p class="content">
+        Too many assignments, too little time? Well, don’t worry cause you’ve
+        reached the right place. Leave the stress behind. Get professional help
+        for your assignments.
+      </p>
+      <a
+        href="https://wa.me/message/4SBCCYBE7464O1"
+        title="Chat on WhatsApp!"
+        class="cta red"
+        >Try it out..</a
+      >
+    </div>
+    <img
+      src="./static/assets/images/intro/1.png"
+      alt="Stress Buster Image"
+      class="intro-right"
+    />
+  </section>
+  <!-- 2 -->
+  <section class="intro" id="2">
+    <img
+      src="./static/assets/images/intro/2.png"
+      alt="Stress Buster Image"
+      class="intro-left"
+    />
+    <div class="intro-right">
+      <h1 class="hero">Zero Plagiarism Assurity</h1>
+      <p class="content">
+        We work very hard to ensure that the work we do for you is authentic,
+        and original. Keeping no stones unturned, so you get nothing but
+        original.
+      </p>
+      <a
+        href="https://wa.me/message/4SBCCYBE7464O1"
+        title="Chat on WhatsApp!"
+        class="cta"
+        >I'm in for it..</a
+      >
+    </div>
+  </section>
+  <!-- 3 -->
+  <section class="intro" id="3">
+    <div class="intro-left">
+      <h1 class="hero">Unlimited ways to customize, get it done your way.</h1>
+      <p class="content">
+        Whether you want your assignment in PPT, Word Document or even in Excel
+        format, we’ve got you covered. We even make custom illustrations for
+        making the work more attractive and eye-catchy.
+      </p>
+      <a
+        href="https://wa.me/message/4SBCCYBE7464O1"
+        title="Chat on WhatsApp!"
+        class="cta red"
+        >Try it out..</a
+      >
+    </div>
+    <img
+      src="./static/assets/images/intro/3.png"
+      alt="Stress Buster Image"
+      class="intro-right"
+    />
+  </section>
+  <!-- 4 -->
+  <section class="intro" id="4">
+    <img
+      src="./static/assets/images/intro/4.png"
+      alt="Stress Buster Image"
+      class="intro-left"
+    />
+    <div class="intro-right">
+      <h1 class="hero">Unlimited edits, make last minute changes</h1>
+      <p class="content">
+        Either it’s a very rare typo, or a major change of topic, we can do it
+        all. Still not satisfied? Request a full re-write of the assignment at
+        no extra cost.
+      </p>
+      <a
+        href="https://wa.me/message/4SBCCYBE7464O1"
+        title="Chat on WhatsApp!"
+        class="cta"
+        >Sign Me Up!</a
+      >
+    </div>
+  </section>
+  <!-- 5 -->
+  <section class="intro" id="5">
+    <div class="intro-left">
+      <h1 class="hero">Always well under the deadlines</h1>
+      <p class="content">
+        The heading says it all. With over 280 assignments and counting, we’ve
+        never failed to deliver on the deadlines.
+      </p>
+      <a
+        href="https://wa.me/message/4SBCCYBE7464O1"
+        title="Chat on WhatsApp!"
+        class="cta red"
+        >Try it out..</a
+      >
+    </div>
+    <img
+      src="./static/assets/images/intro/5.png"
+      alt="Stress Buster Image"
+      class="intro-right"
+    />
+  </section>
+  <!-- 6 -->
+  <section class="intro" id="6">
+    <img
+      src="./static/assets/images/intro/6.png"
+      alt="Stress Buster Image"
+      class="intro-left"
+    />
+    <div class="intro-right">
+      <h1 class="hero">The most experienced team you can find</h1>
+      <p class="content">
+        Our team of industry experts will definitely land your assignment in the
+        top lists. With over 7 years of experience in writing assignments, you
+        could surely leave it up to us.
+      </p>
+      <a
+        href="https://wa.me/message/4SBCCYBE7464O1"
+        title="Chat on WhatsApp!"
+        class="cta"
+        >I'm in for it..</a
+      >
+    </div>
+  </section>
+  <section class="stretch">
+    <h1>What services we offer..</h1>
+    <h3>An assignment may include the following:</h3>
+    <div class="services">
+      <span class="one-col">
+        <div class="service">Reaserch</div>
+        <div class="service">Homework</div>
+        <div class="service">English Writing</div>
+        <div class="service">Article</div>
+        <div class="service">Blogspot</div>
+        <div class="service">Resume / CV</div>
+        <div class="service">Cover Letter</div>
+        <div class="service">Thesis</div>
+        <div class="service">Essay</div>
+        <div class="service">Tutorials</div>
+        <div class="service">Powerpoint</div>
+        <div class="service">PPT</div>
+        <div class="service">MindMaps</div>
+        <div class="service">Personal Statements</div>
+        <div class="service">Motivation Letter</div>
+        <div class="service">Business Propsal</div>
+        <div class="service">Business Portofolio</div>
+        <div class="service">Interview</div>
+        <div class="service">Preparation for Internship / Job</div>
+        <div class="service">Practical Files</div>
+        <div class="service">Python</div>
+        <div class="service">HTML</div>
+        <div class="service">CSS</div>
+        <div class="service">Javascript</div>
+        <div class="service">React JS</div>
+      </span>
+    </div>
+    <h3>And, much more...</h3>
+    <h1>In numerous Subjects</h1>
+    <div class="services">
+      <span class="one-col">
+        <div class="service">English</div>
+        <div class="service">Pshycology</div>
+        <div class="service">Logic</div>
+        <div class="service">Biology</div>
+        <div class="service">Chemistry</div>
+        <div class="service">Computer Science</div>
+        <div class="service">Physics</div>
+        <div class="service">Business Studies</div>
+        <div class="service">Management</div>
+        <div class="service">Physical Education</div>
+        <div class="service">Law</div>
+        <div class="service">Political Sciences</div>
+        <div class="service">EVS</div>
+        <div class="service">Humanities</div>
+        <div class="service">Commerce</div>
+        <div class="service">Philosophy</div>
+        <div class="service">Botany</div>
+        <div class="service">Zoology</div>
+        <div class="service">Arts & Humanitites</div>
+        <div class="service">Building and Planning</div>
+        <div class="service">Computer and IT</div>
+        <div class="service">Design</div>
+        <div class="service">Nursing</div>
+        <div class="service">Councelling</div>
+        <div class="service">Social Science</div>
+        <div class="service">Technology</div>
+        <div class="service">Music</div>
+        <div class="service">Philanthropy</div>
+        <div class="service">Literature</div>
+        <div class="service">Ethics</div>
+        <div class="service">Data Analysis</div>
+        <div class="service">Architecture</div>
+        <div class="service">Communications</div>
+        <div class="service">Language</div>
+      </span>
+    </div>
+    <p>And Much More..</p>
+  </section>
+  <section class="reviews-section">
+    <h1>What our customers say..</h1>
+    <h3>Hear from the people that had past experiences with us.</h3>
+    <div class="reviews">
+      <article class="review">
+        A friend of mine suggested these people for getting my assignments done.
+        Trust me these people are a blessing in disguise! You better believe me
+        on this, they’ll provide the best work.
+        <span class="right-align">- Anushka Rathi, Jaipur, India</span>
+      </article>
+      <article class="review">
+        I am a first year management student who though loves her subject but
+        the assignments were a nightmare. I’m so glad I found Assignment.Nerd on
+        instagram. Seriously the best things that happened to me in 2020. Thank
+        you guys for existing and saving my ass all the time ❤️.
+        <span class="right-align">- Michelle Osman, Washington DC</span>
+      </article>
+      <article class="review">
+        From being a clueless backbencher to scoring the highest in my class,
+        the journey has been all because of these people. Thank you doing my
+        assignments and helping with my tests. Wont ever forget this. Greatful.
+        <span class="right-align">- Mallory Romero, Ontario, Canada</span>
+      </article>
+    </div>
+    <!-- TrustBox widget - Micro Review Count -->
+    <div
+      class="trustpilot-widget"
+      data-locale="en-US"
+      data-template-id="5419b6a8b0d04a076446a9ad"
+      data-businessunit-id="61e41e720f84079c6cb1263a"
+      data-style-height="24px"
+      data-style-width="100%"
+      data-theme="light"
+      data-min-review-count="10"
+    >
+      <a
+        href="https://www.trustpilot.com/review/assignmentnerd.tech"
+        target="_blank"
+        rel="noopener"
+        >Trustpilot</a
+      >
+    </div>
+    <!-- End TrustBox widget -->
+    <h1>So, what're you waiting for..?</h1>
+    <p>So, what're you waiting for? Get your assignments done today!</p>
+    <a
+      href="https://wa.me/message/4SBCCYBE7464O1"
+      title="Chat on WhatsApp!"
+      class="cta red"
+      >Get it done Now!</a
+    >
+  </section>
+</main>
 
 
 
     <!-- Footer -->
 
     <footer class="wrapper">
-        <section class="footer-element">
-            <img src="./static/assets/images/brand/logo_white.png" alt="The Assignment Nerd" class="logo-bottom">
-            <nav class="bottom-nav">
-                <a href="/" class="nav-link scale">Home</a>
-                <a href="#" class="nav-link scale">Prices</a>
-                <a href="./.html" class="nav-link scale">Gallery</a>
-                <a href="./.html" class="nav-link scale">About</a>
-            </nav>
-            <p class="copyright-text"><span class="helvetica">&copy</span> The Assignment Nerd - 2019-2021</p>
-        </section>
-        <section class="footer-element">
-            <h2 class="footer-h1">
-                About Us
-            </h2>
-            <p class="about-text">
-                We are a small team of writers, that help people complete their assignments, exams, practical files, and even movies!
-                <span class="right-align">-Assignment Nerds</span>
-            </p>
-        </section>
-        <section class="footer-element">
-            <h2>Contact us</h2>
-            <div class="details">
-                <div class="details-row">
-                    <a href="mailto:all@assignmentnerd.ga">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-                        </svg>
-                        all@assignmentnerd.ga
-                    </a>
-                    <a href="tel:+91-79766-74193">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                        </svg>
-                        +91 79766-74193
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                        </svg>
-                        Delhi, India
-                    </a>
-                </div>
-                <div class="details-row"></div>
-                <div class="details-row"></div>
-            </div>
-            <div class="social-links">
-                <a href="https://www.facebook.com/Assignment.nerd"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/assignment.nerd"><i class="bi bi-instagram"></i></a>
-                <a href="https://api.whatsapp.com/send/?phone=917976674193" title="Chat on WhatsApp!"><i class="bi bi-whatsapp"></i></a>
-            </div>
-        </section>
+      <section class="footer-element">
+        <img
+          src="./static/assets/images/brand/logo_white.png"
+          alt="The Assignment Nerd"
+          class="logo-bottom"
+        />
+        <nav class="bottom-nav">
+          <a href="/" class="nav-link scale">Home</a>
+          <a href="#" class="nav-link scale">Prices</a>
+          <a href="./.html" class="nav-link scale">Gallery</a>
+          <a href="./.html" class="nav-link scale">About</a>
+        </nav>
+        <p class="copyright-text">
+          <span class="helvetica">&copy</span> The Assignment Nerd - 2019-2021
+        </p>
+      </section>
+      <section class="footer-element">
+        <h2 class="footer-h1">About Us</h2>
+        <p class="about-text">
+          We are a small team of writers, that help people complete their
+          assignments, exams, practical files, and even movies!
+          <span class="right-align">-Assignment Nerds</span>
+        </p>
+      </section>
+      <section class="footer-element">
+        <h2>Contact us</h2>
+        <div class="details">
+          <div class="details-row">
+            <a href="mailto:info@assignmentnerd.tech">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+                />
+              </svg>
+              info@assignmentnerd.tech
+            </a>
+            <a href="tel:+91-63769-02218">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-telephone-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                />
+              </svg>
+              +91 63769-02218
+            </a>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-house-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+                />
+              </svg>
+              Delhi, India
+            </a>
+          </div>
+          <div class="details-row"></div>
+          <div class="details-row"></div>
+        </div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/Assignment.nerd"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/assignment.nerd"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://wa.me/message/4SBCCYBE7464O1"
+            title="Chat on WhatsApp!"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+          <a
+            href="https://linkedin.com/company/assignment-nerd"
+            title="Read our TrustPilot Reviews!"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+      </section>
     </footer>
 
     
 <script>
+  const replicateClasses = [
+    [".services", 3],
+    [".one-col", 2],
+  ];
 
-    const replicateClasses = [['.services', 3], ['.one-col', 2]]
-
-    replicateClasses.forEach(list => {
-        const nodes = document.querySelectorAll(list[0]);
-        nodes.forEach(node => [...Array(list[1])].forEach(_ => node.parentNode.insertBefore(node.cloneNode(true), node)));
-    })
+  replicateClasses.forEach((list) => {
+    const nodes = document.querySelectorAll(list[0]);
+    nodes.forEach((node) =>
+      [...Array(list[1])].forEach((_) =>
+        node.parentNode.insertBefore(node.cloneNode(true), node)
+      )
+    );
+  });
 </script>
 
     <script>
-        
-        function showMenu(event){
+      function showMenu(event) {
+        event.preventDefault();
 
-            event.preventDefault();
+        let element = document.getElementsByTagName("header")[0];
 
-            let element = document.getElementsByTagName('header')[0];
-
-            if(element.classList.contains('active')){
-                element.classList.remove('active');
-            } else {
-                element.classList.add("active");
-            }
-
-
+        if (element.classList.contains("active")) {
+          element.classList.remove("active");
+        } else {
+          element.classList.add("active");
         }
-
+      }
     </script>
-</body>
+  </body>
 </html>
